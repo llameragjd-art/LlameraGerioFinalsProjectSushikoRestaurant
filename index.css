@@ -89,3 +89,9 @@ button:hover{
 footer{
     text-align: center;
 }
+@media (max-width: 766px){
+    h3 {
+        text-align: center;
+    }
+
+}

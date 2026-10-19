@@ -29,7 +29,9 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
-
+.welcome{
+    text-align: center;
+}
 .logo {
     justify-self: start; 
 }
@@ -57,54 +59,69 @@ body {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 10px;
+        grid-template-columns: 1fr;
     }
     .logo {
         justify-self: center;
     }
+   
+}   
+.menu-grid {
+    width: min(1500px, 100%);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
 }
-.products{
+.item{
     display: flex;
-    flex-direction: row;
-
-    justify-content: center;
     align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
 }
-.welcome{
-    text-align: center;
-    color:  #390279;
-}
-main{
-    gap: 30px;
-}
-.background{
-    margin: 0px;
-    width: 500px;
-    border-radius: 5px;
-
-    background-color: rgba(0, 0, 0, 0.5);
-
-}
-.product{
-    display: flex;
+.item img {
+    width: clamp(80px, 12vw, 140px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 .info{
-    display: flex;
-    flex-direction: column;
+    min-width: 0;
 }
-
-.product img{
-    width: clamp(200px, 14vw, 345px);
+.info p{
+    color:#0F6E7A;
+    font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+    margin: 8px 0;
+    line-height: 1.4;
 }
-.productbtn{
-    background-color:  rgb(61, 61, 255);
-    padding: 10px;
+.info button{
+    background-color: rgb(61, 61, 255);;
+    color: white;
+    border: 0;
+    padding: 10px 16px;
     border-radius: 15px;
+    cursor: pointer;
 }
-.productbtn:hover{
-    background-color: #0F6E7A;
-}
-@media (max-width: 766px){
-    .product{
+.info button:hover {background-color: #0F6E7A;}
+
+@media (max-width: 766px) {
+    .menu-grid{
+        display: flex;
         flex-direction: column;
+        gap: 18px;
+    }
+    .item{
+        padding: 12px;
+    }
+    .item img{
+        width: 110px;
+    }
+    .info button{
+        width: 100%;
     }
 }
