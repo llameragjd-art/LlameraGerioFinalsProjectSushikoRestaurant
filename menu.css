@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url(BackGroundimg.png);
+    background-image: url(BackGroundimg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,11 +48,15 @@ body {
 
 .Menu a {
     text-decoration: none;
-    color: #0F6E7A
+    color: white;
 }
 
 .Menu h2 {
     margin: 0;
+    color: white;
+}
+.welcome{
+    color: white
 }
 @media (max-width: 766px) {
     .navbar {
@@ -66,6 +70,17 @@ body {
     }
    
 }   
+.choice
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.choice h3{
+    color:white;
+}
 .menu-grid {
     width: min(1500px, 100%);
     margin: 0 auto;
@@ -74,6 +89,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
+    padding-bottom: 50px;
 }
 .item{
     display: flex;
@@ -94,20 +110,20 @@ body {
     min-width: 0;
 }
 .info p{
-    color:#0F6E7A;
+    color: white;
     font-size: clamp(0.9rem, 1.3vw, 1.1rem);
     margin: 8px 0;
     line-height: 1.4;
 }
 .info button{
-    background-color: rgb(61, 61, 255);;
+    background-color:  rgb(255, 92, 51);
     color: white;
     border: 0;
     padding: 10px 16px;
     border-radius: 15px;
     cursor: pointer;
 }
-.info button:hover {background-color: #0F6E7A;}
+.info button:hover {background-color:  rgb(243, 198, 0);}
 
 @media (max-width: 766px) {
     .menu-grid{
@@ -124,4 +140,12 @@ body {
     .info button{
         width: 100%;
     }
+}
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }

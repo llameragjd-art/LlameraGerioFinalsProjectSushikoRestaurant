@@ -1,26 +1,31 @@
+
 @keyframes goUp {
     from {
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
-.page
-{
+
+.page {
     animation: goUp 1s ease-out;
 }
 
+
 body {
-    background-image: url(BackGroundimg.png);
+    background-image: url("BackGroundimg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -31,7 +36,7 @@ body {
 }
 
 .logo {
-    justify-self: start; 
+    justify-self: start;
 }
 
 .navbar img {
@@ -42,56 +47,133 @@ body {
 .Menu {
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 
 .Menu a {
     text-decoration: none;
-    color: #003f47
+    color: #fcffff;
+}
+
+.Menu a:hover {
+    color: rgb(255, 92, 51);
 }
 
 .Menu h2 {
     margin: 0;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 40px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.welcome {
+    font-style: italic;
+    color: #ffffff;
+}
+
+.hero-text h3 {
+    font-style: italic;
+    color: white;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 92, 51);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(243, 198, 0);
+}
+
+.imageback {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.imageback img {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
 @media (max-width: 766px) {
     .navbar {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 10px;
     }
+
     .logo {
         justify-self: center;
     }
-}
-.welcome{
-    font-style: italic;
-    color: #390279;
-}
-@media (max-width: 766px){
-    .welcome{
-        text-align: center;
-    }
-}
-h3{
-    font-style: italic;
-    color: rgb(255, 0, 43);
-}
-button{
-    width: 180px;
-    padding: 10px;
-    border-radius: 20px;
 
-    background-color: rgb(61, 61, 255);
-    color: white;
-}
-button:hover{
-    background-color: #0F6E7A;
-}
-footer{
-    text-align: center;
-}
-@media (max-width: 766px){
-    h3 {
-        text-align: center;
+    .Menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
+    .Menu h2 {
+        font-size: 18px;
+    }
+
+    .welcome {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h3 {
+        font-size: 16px;
+    }
+
+    .imageback {
+        width: 100%;
+    }
+
+    .imageback img {
+        display: none;
+    }
 }
