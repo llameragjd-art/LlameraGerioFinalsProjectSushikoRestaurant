@@ -21,7 +21,7 @@
                 <a href="index.html"><h2>Home</h2></a>
                 <a href="menu.html"><h2>Menu</h2></a>
                 <a href="about.html"><h2>About</h2></a>
-                <a href="#"><h2>Contact</h2></a>
+                <a href="contacts.html"><h2>Contact</h2></a>
             </nav>
         </header>
 
@@ -32,37 +32,54 @@
             <a href="ramens.html"><h3>Ramens</h3></a>
         </div>
 
-        <!-- RAMEN MENU GRID -->
+       
         <div class="menu-grid">
 
-            <div class="item">
-                <img src="ramen1.jpg" alt="Tonkotsu Hakata Ramen">
+    <div class="item">
+        <img src="ramen1.jpg" alt="Tonkotsu Hakata Ramen">
 
-                <div class="info">
-                    <p>Name: Tonkotsu Hakata Ramen</p>
-                    <p>Price: 150 PHP</p>
-                    <button>Add To Cart</button>
-                </div>
-            </div>
+        <div class="info">
+            <p>Name: Tonkotsu Hakata Ramen</p>
+            <p>Price: 150 PHP</p>
 
-            <div class="item">
-                <img src="ramen2.jpg" alt="Tantanmen Ramen">
-
-                <div class="info">
-                    <p>Name: Tantanmen Ramen</p>
-                    <p>Price: 160 PHP</p>
-                    <button>Add To Cart</button>
-                </div>
-            </div>
-
+            <button class="add-to-cart" data-name="Tonkotsu Hakata Ramen" data-price="150" type="button"> Add To Cart </button>
         </div>
-        <!-- END OF RAMEN MENU GRID -->
+    </div>
 
-        <!-- FOOTER IS NOW OUTSIDE THE GRID -->
+    <div class="item">
+        <img src="ramen2.jpg" alt="Tantanmen Ramen">
+
+        <div class="info">
+            <p>Name: Tantanmen Ramen</p>
+            <p>Price: 160 PHP</p>
+
+            <button class="add-to-cart" data-name="Tantanmen Ramen" data-price="160" type="button"> Add To Cart </button>
+        </div>
+    </div>
+
+</div>
+    
+<section class="cart">
+    <h1>Your Cart</h1>
+
+    <p id="empty-cart">Your cart is empty.</p>
+
+    <ul id="cart-items"></ul>
+
+    <h3>Total: ₱<span id="cart-total">0</span></h3>
+
+    <button id="clear-cart" type="button">Clear Cart</button>
+    <button id="order-now" type="button">Order Now</button>
+
+    <p id="cart-message" role="status"></p>
+</section>
+
         <footer class="footer">
             <p>&copy; 2026 Sushiko Restaurant. All Rights Reserved.</p>
         </footer>
 
     </div>
+
+    <script src="ramens.js"></script>
 </body>
 </html>

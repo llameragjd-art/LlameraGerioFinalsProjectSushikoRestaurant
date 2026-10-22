@@ -1,0 +1,92 @@
+
+@keyframes goUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("BackGroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: goUp 1s ease-out;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    justify-self: start;
+}
+
+.navbar img {
+    width: clamp(160px, 45vw, 190px);
+    display: block;
+}
+
+.Menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.Menu h2 {
+    margin: 0;
+    color: white;
+}
+
+.Menu a:hover {
+    color: rgb(255, 92, 51);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 20px;
+}
+.links img{
+    width: clamp(87px, 24vw, 100px);
+}
+.links h2{
+    color: white;
+}
+footer{
+    text-align: center;
+    color: white;
+}

@@ -149,3 +149,24 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+
+.cart{
+    margin: 40px auto;
+    background-color: lightyellow;
+    padding: 25px;
+    border-radius: 15px;
+}
+#clear-cart{
+    padding: 13px;
+    border-radius: 19px;
+
+    background-color:  rgb(255, 92, 51);
+    color: white;
+}
+#order-now{
+    padding: 13px;
+    border-radius: 19px;
+
+    background-color:  rgb(255, 92, 51);
+    color: white;
+}
