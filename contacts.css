@@ -11,9 +11,10 @@
     }
 }
 
-* {
-    box-sizing: border-box;
+.page {
+    animation: goUp 1s ease-out;
 }
+
 
 body {
     background-image: url("BackGroundimg.jpg");
@@ -23,13 +24,8 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
-}
-
-.page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    animation: goUp 1s ease-out;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -56,37 +52,89 @@ body {
 
 .Menu a {
     text-decoration: none;
-    color: white;
-}
-
-.Menu h2 {
-    margin: 0;
-    color: white;
+    color: #fcffff;
 }
 
 .Menu a:hover {
     color: rgb(255, 92, 51);
 }
 
+.Menu h2 {
+    margin: 0;
+}
+
 h1{
-    color: white;
     text-align: center;
+    color: white;
 }
 .links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    gap: 20px;
 }
 .links img{
-    width: clamp(87px, 24vw, 100px);
+
+    width: clamp(100px, 45vw, 120px);
 }
 .links h2{
     color: white;
 }
-footer{
+
+
+footer {
     text-align: center;
     color: white;
+    padding: 20px;
+}
+
+
+@media (max-width: 766px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .Menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .Menu h2 {
+        font-size: 18px;
+    }
+
+    .welcome {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h3 {
+        font-size: 16px;
+    }
+
+    .imageback {
+        width: 100%;
+    }
+
+    .imageback img {
+        display: none;
+    }
 }
