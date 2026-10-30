@@ -56,15 +56,16 @@ body {
 
 .Menu a {
     text-decoration: none;
-    color: white;
+    color: #fcffff;
 }
-
+.Menu a:hover {
+    color: rgb(255, 92, 51);
+}
 .Menu h2 {
     margin: 0;
     color: white;
 }
-
-.Menu a:hover {
+.Menu h2:hover{
     color: rgb(255, 92, 51);
 }
 

@@ -63,7 +63,9 @@ body {
     margin: 0;
     color: white;
 }
-
+.Menu h2:hover{
+    color: rgb(255, 92, 51);
+}
 .Menu a:hover {
     color: rgb(255, 92, 51);
 }
