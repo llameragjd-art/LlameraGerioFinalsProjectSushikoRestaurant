@@ -207,16 +207,24 @@ body {
     border-radius: 15px;
 }
 #clear-cart{
-    padding: 13px;
+    padding: 14px;
     border-radius: 19px;
+    border: none;
 
     background-color:  rgb(255, 92, 51);
     color: white;
 }
 #order-now{
-    padding: 13px;
+    padding: 14px;
     border-radius: 19px;
+    border: none;
 
     background-color:  rgb(255, 92, 51);
     color: white;
+}
+#clear-cart:hover{
+    background-color: rgb(243, 198, 0);
+}
+#order-now:hover{
+    background-color: rgb(243, 198, 0);
 }
